@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding: 0;
+}
+
+.menu-nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    /* margin-top: 40px; */
+}
+
+.enlaces :hover{
+    color: cyan;
+}
+
+.header{
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.418) 0%, rgba(51, 8, 104, 0.418) 100%), url(img/fondo-inicio-mediano.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor-textos{
+    padding-bottom: 100px;
+}
+
+.hero h1{
+    font-size: 60px;
+}
+
+.copy{
+    font-size: 24px;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.wave{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* main */
+
+.seccion1{
+    padding-top: 30px;
+}
+
+.titulo-seccion{
+    margin-bottom: 40px;
+    /* padding-bottom: 90px; */
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #7c79a0;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.relatos{
+    width: 40%;
+}
+
+.relato{
+    margin-bottom: 30px;
+}
+
+.n-relato{
+    font-size: 25px;
+    color: #7c79a0;
+    margin-bottom: 5px;
+}
+
+.t-relato{
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.ilustracion{
+    width: 50%;
+}
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.material-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productos-contenedor{
+    width: 31%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.productos-contenedor video:hover{
+    transform: scale(1);   
+}
+
+.productos-contenedor img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;  
+}
+
+
+.grabaciones{
+    background: #ffffff;
+}
+
+.productos-contenedor video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; mucho zoom para los videos*/
+    border-radius: 10px;  
+}
+
+
+.fondo-asesor{
+    background: #f2f2f2;
+}
+
+.contenido-asesor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen{
+    height: 200px;
+    padding: 0;
+}
+
+.imagen img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nombre{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+footer{
+    background-image: url(img/fondo-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+p{
+    color: #fff;
+}
+
+.redes-sociales{
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redes-sociales i{
+    font-size: 30px;
+}
+
+.face{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.face i{
+    color: rgb(25, 92, 160);
+}
+
+.what i{
+    color: darkgreen;
+}
+
+.what{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook{
+    color: #fff;
+}
+
+.whatsapp{
+    color: #fff;
+}
+
+.contactanos{
+    padding: 90px 0 25px 0;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+.redes-contacto{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .wave{
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+
+@media screen and (max-width:750px){
+    .menu-nav{
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 45px;
+    }
+
+    .copy{
+        font-size: 22px;
+    }
+
+    .titulo-seccion{
+        font-size: 28px;
+    }
+
+    .contenedor-sobre-nosotros{
+        justify-content: center;
+    }
+
+    .relatos{
+        width: 80%;
+    }
+
+    .ilustracion{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .productos-contenedor{
+        width: 47%;
+    }
+} 
+
+@media screen and (max-width:500px){
+    .contenedor{
+        width: 93%;
+    }
+
+    .menu-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .menu-nav a{
+        padding-bottom: 10px;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .hero{
+        padding: 0;
+        
+    }
+
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .productos-contenedor{
+        width: 90%;
+    }
+
+    .redes-sociales{
+        flex-direction: column;
+    }
+}
